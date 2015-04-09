@@ -1,0 +1,130 @@
+/*
+Filterable Portfolio
+---------------------------------------------------------------------------------------------------- */
+ 
+ul.filter {
+color: #999;
+list-style: none;
+margin-left: 0;
+}
+ 
+ul.filter li {
+float: left;
+margin-left: 1rem;
+margin-left: 10px;
+margin-bottom: 1rem;
+margin-bottom: 10px;
+}
+ul.filter li:first-child {
+margin-left: 0;
+}
+ 
+ul.filter a {
+background: #333;
+color: #fff;
+display: block;
+padding: 0.5rem 1rem;
+text-decoration: none;
+border-bottom: none;
+font-size: 1.5rem;
+font-weight: 300;
+}
+ 
+ul.filter a:hover, ul.filter a.active {
+background: #0ebfe9;
+}
+ 
+.filterable-portfolio {
+margin-left: -2rem;
+margin-left: -20px;
+overflow: hidden;
+}
+ 
+.portfolio-item {
+float: left;
+margin-bottom: 2rem;
+margin-bottom: 20px;
+margin-left: 2rem;
+margin-left: 20px;
+position: relative;
+width: 270px; /* [main element width - (number of columns - 1)*20]/number of columns */
+/*width: 366px; For 3-columns */
+}
+ 
+.portfolio-item a {
+display: block;
+border-bottom: none;
+}
+ 
+.portfolio-item a img {
+display: block;
+background: none;
+padding: 0;
+border: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+width: 100%;
+margin-bottom: 0;
+}
+ 
+.portfolio-overlay {
+bottom: 0;
+left: 0;
+position: absolute;
+}
+ 
+.portfolio-overlay h3 {
+background: #000;
+color: #fff;
+font-size: 1.2rem;
+font-weight: normal;
+margin: 0;
+max-width: 180px;
+padding: 5px 7px;
+text-transform: uppercase;
+}
+ 
+/*-----------------------------------------------------------------------------------*
+/* = Isotope CSS Animations
+/*-----------------------------------------------------------------------------------*/
+.isotope, .isotope .isotope-item { -webkit-transition-duration: 0.6s; -moz-transition-duration: 0.6s; -ms-transition-duration: 0.6s; -o-transition-duration: 0.6s; transition-duration: 0.6s; }
+.isotope { -webkit-transition-property: height, width; -moz-transition-property: height, width; -ms-transition-property: height, width; -o-transition-property: height, width; transition-property: height, width; }
+.isotope .isotope-item { -webkit-transition-property: -webkit-transform, opacity; -moz-transition-property: -moz-transform, opacity; -ms-transition-property: -ms-transform, opacity; -o-transition-property: top, left, opacity; transition-property: transform, opacity; }
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition { -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -ms-transition-duration: 0s; -o-transition-duration: 0s; transition-duration: 0s; }
+ 
+.filterable-portfolio-page .content .entry-header {
+margin-bottom: 1rem;
+margin-bottom: 10px;
+}
+ 
+.filterable-portfolio-page .content .entry-title {
+margin-bottom: 3rem;
+margin-bottom: 30px;
+}
+ 
+@media only screen and (max-width: 1179px) {
+.portfolio-item {
+width: 306px;
+}
+}
+ 
+@media only screen and (max-width: 1023px) {
+.portfolio-item {
+width: 242px;
+}
+}
+ 
+@media only screen and (max-width: 768px) {
+.portfolio-item {
+width: 217px;
+}
+}
+ 
+@media only screen and (max-width: 320px) {
+/* Uncomment the following only if the last filter item is on its own in a separate line like this: http://i.imgur.com/0VD8tmU.png */
+ul.filter li:last-child {
+margin-left: 0;
+}
+} 
